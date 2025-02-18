@@ -1,5 +1,4 @@
-import pygame
-from sys import exit
+import pygame, sys
 
 pygame.init() # Initialize pygame module.
 screen = pygame.display.set_mode((1200,600)) # Creates the display (Width,Height)
