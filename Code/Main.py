@@ -13,4 +13,4 @@ def run(self):
                 sys.exit() # Exits Code
 
         pygame.display.update() # Takes evrything and updates display surface.
-        clock.tick(60) # Setting internal clock to 60fps ensuring while loop doesnt run more than 60 times per second.
+        self.clock.tick(60) # Setting internal clock to 60fps ensuring while loop doesnt run more than 60 times per second.
