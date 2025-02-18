@@ -3,6 +3,7 @@ from sys import exit
 
 pygame.init() # Initialize pygame module.
 screen = pygame.display.set_mode((1200,600)) # Creates the display (Width,Height)
+clock = pygame.time.Clock() # Creates internal Clock for fps/tick system
 
 while True: # Game runs inside of this loop.
     for event in pygame.event.get(): # Loops through all events in pygame module
@@ -11,3 +12,4 @@ while True: # Game runs inside of this loop.
             exit()
 
     pygame.display.update() # Takes evrything and updates display surface.
+    clock.tick(60)
