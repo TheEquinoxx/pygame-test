@@ -3,8 +3,8 @@ import pygame, sys
 class Game:
     def __init__(self):
         pygame.init() # Initialize pygame module
-        screen = pygame.display.set_mode((1200,600)) # Creates the display (Width,Height)
-        clock = pygame.time.Clock() # Creates internal Clock for fps/tick system
+        self.screen = pygame.display.set_mode((1200,600)) # Creates the display (Width,Height)
+        self.clock = pygame.time.Clock() # Creates internal Clock for fps/tick system
         pygame.display.set_caption("Test Game") # Display Window Title
 
     def run(self):
