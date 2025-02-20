@@ -14,6 +14,7 @@ class Game:
                     pygame.quit() # Close window
                     sys.exit() # Exits Code
 
+            self.screen.fill("black")
             pygame.display.update() # Takes evrything and updates display surface
             self.clock.tick(60) # Setting internal clock to 60fps ensuring while loop doesnt run more than 60 times per second
 
